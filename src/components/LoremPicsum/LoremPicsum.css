@@ -1,0 +1,186 @@
+/* src/components/LoremPicsum/LoremPicsum.css */
+.image-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.image-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+/* Loading animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-card {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* src/components/LoremPicsum/LoremPicsum.css */
+
+/* Gradient background for modal header */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+/* Smooth transitions */
+.modal-content {
+  transition: all 0.3s ease;
+  border-radius: 0.75rem;
+}
+
+/* Hover effects for buttons */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Custom scrollbar for modal */
+.modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Image overlay animation */
+.position-absolute {
+  transition: all 0.3s ease;
+}
+
+/* Card hover effects */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .modal-dialog.modal-xl {
+    margin: 1rem;
+    max-width: calc(100% - 2rem);
+  }
+
+  .col-lg-8,
+  .col-lg-4 {
+    width: 100%;
+  }
+}
+
+/* Backdrop blur effect */
+.modal-backdrop {
+  backdrop-filter: blur(5px);
+}
+
+/* src/components/LoremPicsum/LoremPicsum.css */
+
+/* Navigation Pills */
+.nav-pills .nav-link {
+  color: #6c757d;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.nav-pills .nav-link:not(.active):hover {
+  color: #495057;
+  background-color: #f8f9fa;
+}
+
+/* Code blocks */
+code {
+  background: #f8f9fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+  color: #e83e8c;
+}
+
+.bg-dark code {
+  background: rgba(255, 255, 255, 0.1);
+  color: #80bdff;
+}
+
+/* Feature icons */
+.bg-primary.bg-opacity-10,
+.bg-success.bg-opacity-10 {
+  width: 70px;
+  height: 70px;
+}
+
+/* Card hover effects */
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* List group customization */
+.list-group-item {
+  border-color: #f8f9fa;
+  padding: 0.75rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-pills .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+}

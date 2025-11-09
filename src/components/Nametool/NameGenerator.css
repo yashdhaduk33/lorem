@@ -1,0 +1,62 @@
+.name-card {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.name-card:hover {
+  transform: translateY(-5px);
+  border-color: #0d6efd;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.saved-names-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Custom scrollbar for saved names */
+.saved-names-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.saved-names-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.saved-names-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.saved-names-list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .name-card {
+    margin-bottom: 1rem;
+  }
+
+  .saved-names-list {
+    max-height: 200px;
+  }
+}
+
+/* Animation for generated names */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.name-card {
+  animation: fadeIn 0.5s ease-out;
+}
