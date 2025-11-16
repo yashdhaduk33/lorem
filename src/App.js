@@ -17,6 +17,13 @@ import BlogLayout from './components/blogpage/BlogLayout';
 import LoremIpsumGenerator from './components/blogpage/BlogLayout';
 import MetaDescriptionCreator from './components/MetaDescriptionCreator/MetaDescriptionCreator';
 import TextCaseConverter from './components/WordCounter/TextCaseConverter';
+import PetNameGenerator from './pages/PetNameGenerator';
+import DogNameGenerator from './pages/DogNameGenerator';
+import PuppyNameGenerator from './pages/PuppyNameGenerator';
+import CatNameGenerator from './pages/CatNameGenerator';
+import QuoteGenerator from './pages/QuoteGenerator';
+import InstagramHashtagGenerator from './pages/InstagramHashtagGenerator';
+import WeddingHashtagGenerator from './pages/WeddingHashtagGenerator';
 
 export default function App() {
   return (
@@ -121,6 +128,13 @@ export default function App() {
             <Route path="/word-counter" element={<WordCounter />} />
             <Route path="/case-converter" element={<CaseConverter />} />
             <Route path="/emoji-text-generator" element={<EmojiTextGenerator />} />
+            <Route path="/pet-name-generator" element={<PetNameGenerator />} />
+            <Route path="/puppy-name-generator" element={<PuppyNameGenerator />} />
+            <Route path="/dog-name-generator" element={<DogNameGenerator />} />
+            <Route path="/cat-name-generator" element={<CatNameGenerator />} />
+            <Route path="/quote-generator" element={<QuoteGenerator />} />
+            <Route path="/instagram-hashtag-generator" element={<InstagramHashtagGenerator />} />
+            <Route path="/wedding-hashtag-generator" element={<WeddingHashtagGenerator />} />
 
             <Route path="/termsconditions" element={<Termsconditions />} />
           </Routes>
