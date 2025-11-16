@@ -3,11 +3,13 @@ const { SitemapStream, streamToPromise } = require('sitemap');
 const { createWriteStream } = require('fs');
 
 async function generateSitemap() {
-  const hostname = 'https://loremtextgenerator.com';
+  const hostname = 'https://www.loremtextgenerator.com'; // www domain
   const sitemap = new SitemapStream({ hostname });
   const writeStream = createWriteStream('./public/sitemap.xml');
 
   sitemap.pipe(writeStream);
+
+  const now = new Date().toISOString(); // auto lastmod
 
   const links = [
     // Main pages
@@ -25,12 +27,30 @@ async function generateSitemap() {
     { url: '/emoji-text-generator', changefreq: 'weekly', priority: 0.9 },
     { url: '/textcaseconverter', changefreq: 'weekly', priority: 0.9 },
     { url: '/metadescriptioncreator', changefreq: 'weekly', priority: 0.9 },
+
+    // Pet tools
+    { url: '/pet-name-generator', changefreq: 'weekly', priority: 0.9 },
+    { url: '/dog-name-generator', changefreq: 'weekly', priority: 0.9 },
+    { url: '/puppy-name-generator', changefreq: 'weekly', priority: 0.9 },
+    { url: '/cat-name-generator', changefreq: 'weekly', priority: 0.9 },
+
+    // SEO tools
+    { url: '/quote-generator', changefreq: 'weekly', priority: 0.9 },
+    { url: '/instagram-hashtag-generator', changefreq: 'weekly', priority: 0.9 },
+    { url: '/wedding-hashtag-generator', changefreq: 'weekly', priority: 0.9 },
   ];
 
-  links.forEach(link => sitemap.write(link));
-  sitemap.end();
+  // ✅ Auto apply lastmod: now to every link
+  links.forEach(link => {
+    sitemap.write({
+      ...link,
+      lastmod: now
+    });
+  });
 
+  sitemap.end();
   await streamToPromise(sitemap);
+
   console.log('✅ Sitemap successfully created: public/sitemap.xml');
 }
 

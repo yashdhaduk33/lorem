@@ -27,39 +27,54 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Lorem Text Generator — Free Lorem Ipsum Generator for Designers & Developers</title>
+        <title>Lorem Ipsum Generator — Free Dummy Text & Placeholder Generator Online</title>
         <meta
           name="description"
-          content="Free Lorem Ipsum Generator — instantly create dummy text for your design and development projects. No signup, 100% free online tool."
+          content="Generate Lorem Ipsum dummy text instantly — perfect for designers, developers, and content creators. Create paragraphs, sentences, or words of placeholder text for free."
         />
-
-        {/* ✅ SEO-optimized, high-ranking keywords */}
         <meta
           name="keywords"
-          content="lorem ipsum generator, dummy text generator, lorem ipsum text, lorem text generator, placeholder text generator, free lorem ipsum, lorem ipsum online, lorem ipsum paragraph generator, dummy content generator, web design text generator, fake text generator, lorem ipsum for designers, lorem ipsum tool, lorem ipsum maker, lorem ipsum website, random text generator, lorem text filler, best lorem ipsum generator, lorem ipsum generator online free"
+          content="lorem ipsum generator, dummy text generator, placeholder text, lorem text generator, lorem ipsum online, random paragraph generator, fake text tool, lorem ipsum for design, free lorem ipsum generator"
         />
-
         <link rel="canonical" href={SITE_URL} />
 
-        {/* Open Graph (Facebook/LinkedIn) */}
-        <meta property="og:title" content="Lorem Ipsum Generator — Free Dummy Text Tool" />
+        {/* Open Graph */}
+        <meta property="og:title" content="Free Lorem Ipsum Generator — Dummy Text for Designers & Developers" />
         <meta
           property="og:description"
-          content="Generate Lorem Ipsum dummy text for web design, mockups, and development — 100% free and easy to use."
+          content="Generate clean Lorem Ipsum text for mockups, wireframes, or SEO demos. 100% free, no signup."
         />
         <meta property="og:image" content={OG_IMAGE} />
         <meta property="og:url" content={SITE_URL} />
         <meta property="og:type" content="website" />
 
-        {/* Twitter Cards */}
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Lorem Ipsum Generator — Free Dummy Text Tool" />
+        <meta name="twitter:title" content="Free Lorem Ipsum Generator — Dummy Text Online" />
         <meta
           name="twitter:description"
-          content="Generate Lorem Ipsum dummy text instantly — ideal for design and development projects."
+          content="Fast & free Lorem Ipsum generator for developers, designers, and copywriters."
         />
         <meta name="twitter:image" content={OG_IMAGE} />
+
+        {/* JSON-LD Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Lorem Text Generator",
+            "url": SITE_URL,
+            "applicationCategory": "Utility",
+            "operatingSystem": "All",
+            "description": "Generate Lorem Ipsum text online instantly for free.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Lorem Text Generator"
+            }
+          })}
+        </script>
       </Helmet>
+
 
       <div className="bg-light min-vh-100">
         {/* Updated Hero Section - Clean & Professional */}
@@ -266,6 +281,42 @@ const Index = () => {
                       </Row>
                     </Card.Body>
                   </Card>
+
+                  <section className="py-5 bg-white border-top mb-3 mt-3">
+                    <Container>
+                      <Row className="justify-content-center">
+                        <Col lg={10}>
+                          <h2 className="fw-bold text-primary mb-3">What is a Lorem Ipsum Generator?</h2>
+                          <p className="text-muted">
+                            A Lorem Ipsum Generator is a simple online tool that creates random placeholder text for web pages,
+                            templates, mockups, and print designs. It helps designers and developers focus on layout and
+                            typography without worrying about real content.
+                          </p>
+
+                          <h3 className="fw-bold text-dark mt-4">How Does It Work?</h3>
+                          <p className="text-muted">
+                            Just choose how many paragraphs, words, or sentences you need, and our generator instantly
+                            produces clean Lorem Ipsum text. You can also wrap it in custom HTML tags or add class names for
+                            quick integration into your projects.
+                          </p>
+
+                          <h3 className="fw-bold text-dark mt-4">Benefits of Using Lorem Ipsum</h3>
+                          <ul className="text-muted">
+                            <li>Improves focus on design rather than copywriting</li>
+                            <li>Provides realistic content length and structure</li>
+                            <li>Prevents distraction during the creative process</li>
+                            <li>Speeds up wireframing and UI development</li>
+                          </ul>
+
+                          <p className="mt-3">
+                            Try our <Link to="/word-counter">Word Counter</Link> or
+                            <Link to="/case-converter"> Case Converter</Link> tools to enhance your workflow further.
+                          </p>
+                        </Col>
+                      </Row>
+                    </Container>
+                  </section>
+
 
                   <section className="tools-section py-5 bg-white">
                     <Container>
