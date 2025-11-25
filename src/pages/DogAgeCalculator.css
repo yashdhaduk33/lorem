@@ -1,0 +1,95 @@
+/* DogAgeCalculator.css */
+.dog-age-calculator {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem 0;
+}
+
+.calculator-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.calculator-header {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.result-card {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 15px;
+  padding: 2rem;
+  border: 2px solid #dee2e6;
+}
+
+.age-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dog-age-badge,
+.human-age-badge {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.human-age-badge {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+}
+
+.placeholder-result {
+  padding: 3rem 2rem;
+  background: #f8f9fa;
+  border-radius: 15px;
+  border: 2px dashed #dee2e6;
+}
+
+.placeholder-icon {
+  opacity: 0.7;
+}
+
+.content-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+}
+
+.btn-group .btn {
+  border-radius: 8px !important;
+}
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .dog-age-calculator {
+    padding: 1rem 0;
+  }
+
+  .age-display {
+    flex-direction: column;
+  }
+
+  .calculator-header h1 {
+    font-size: 2rem;
+  }
+}

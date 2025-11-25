@@ -334,6 +334,7 @@ const Index = () => {
                       </Row>
 
                       <Row className="g-4 justify-content-center">
+
                         {/* Name Generator */}
                         <Col xl={3} lg={4} md={6} sm={6}>
                           <Link to="/name-generator" className="text-decoration-none">
@@ -344,7 +345,7 @@ const Index = () => {
                                 </div>
                                 <h5 className="fw-semibold text-dark mb-2">Name Generator</h5>
                                 <p className="text-muted small mb-3">
-                                  Generate random or custom names for characters, projects, and brands instantly.
+                                  Random name generator for brands, characters, or projects.
                                 </p>
                                 <Badge bg="outline-primary" text="primary" className="fs-7 px-2 py-1">
                                   Popular
@@ -364,7 +365,7 @@ const Index = () => {
                                 </div>
                                 <h5 className="fw-semibold text-dark mb-2">Word Counter</h5>
                                 <p className="text-muted small mb-3">
-                                  Count words, characters, sentences, and paragraphs with detailed analytics.
+                                  Count words, characters, sentences & paragraphs instantly.
                                 </p>
                                 <Badge bg="outline-success" text="success" className="fs-7 px-2 py-1">
                                   Essential
@@ -384,7 +385,7 @@ const Index = () => {
                                 </div>
                                 <h5 className="fw-semibold text-dark mb-2">Case Converter</h5>
                                 <p className="text-muted small mb-3">
-                                  Convert text between uppercase, lowercase, title case, and more with one click.
+                                  Convert text into UPPERCASE, lowercase, Title Case and more.
                                 </p>
                                 <Badge bg="outline-info" text="info" className="fs-7 px-2 py-1">
                                   New
@@ -404,7 +405,7 @@ const Index = () => {
                                 </div>
                                 <h5 className="fw-semibold text-dark mb-2">Emoji Text Generator</h5>
                                 <p className="text-muted small mb-3">
-                                  Transform your text into fun, expressive emoji versions for social media and chats.
+                                  Transform your text into expressive emoji styles.
                                 </p>
                                 <Badge bg="outline-warning" text="warning" className="fs-7 px-2 py-1">
                                   Fun
@@ -424,7 +425,7 @@ const Index = () => {
                                 </div>
                                 <h5 className="fw-semibold text-dark mb-2">Lorem Picsum</h5>
                                 <p className="text-muted small mb-3">
-                                  Generate high-quality random placeholder images for your designs and mockups.
+                                  Random placeholder images for design & development.
                                 </p>
                                 <Badge bg="outline-danger" text="danger" className="fs-7 px-2 py-1">
                                   Design
@@ -434,7 +435,126 @@ const Index = () => {
                           </Link>
                         </Col>
 
-                        {/* More Tools Coming Soon */}
+                        {/* Pet Name Generator */}
+                        <Col xl={3} lg={4} md={6} sm={6}>
+                          <Link to="/pet-name-generator" className="text-decoration-none">
+                            <Card className="h-100 border-0 shadow-sm tool-card hover-lift transition-all">
+                              <Card.Body className="text-center p-4">
+                                <div className="icon-wrapper bg-primary bg-opacity-10 rounded-circle mx-auto mb-3">
+                                  <i className="bi bi-heart text-primary fs-3"></i>
+                                </div>
+                                <h5 className="fw-semibold text-dark mb-2">Pet Name Generator</h5>
+                                <p className="text-muted small mb-3">
+                                  Generate cute names for your lovely pets.
+                                </p>
+                              </Card.Body>
+                            </Card>
+                          </Link>
+                        </Col>
+
+                        {/* Dog Name Generator */}
+                        <Col xl={3} lg={4} md={6} sm={6}>
+                          <Link to="/dog-name-generator" className="text-decoration-none">
+                            <Card className="h-100 border-0 shadow-sm tool-card hover-lift transition-all">
+                              <Card.Body className="text-center p-4">
+                                <div className="icon-wrapper bg-warning bg-opacity-10 rounded-circle mx-auto mb-3">
+                                  <i className="bi bi-emoji-smile text-warning fs-3"></i>
+                                </div>
+                                <h5 className="fw-semibold text-dark mb-2">Dog Name Generator</h5>
+                                <p className="text-muted small mb-3">
+                                  Unique and classic dog names for all breeds.
+                                </p>
+                              </Card.Body>
+                            </Card>
+                          </Link>
+                        </Col>
+
+                        {/* Puppy Name Generator */}
+                        <Col xl={3} lg={4} md={6} sm={6}>
+                          <Link to="/puppy-name-generator" className="text-decoration-none">
+                            <Card className="h-100 border-0 shadow-sm tool-card hover-lift transition-all">
+                              <Card.Body className="text-center p-4">
+                                <div className="icon-wrapper bg-info bg-opacity-10 rounded-circle mx-auto mb-3">
+                                  <i className="bi bi-emoji-smile-upside-down text-info fs-3"></i>
+                                </div>
+                                <h5 className="fw-semibold text-dark mb-2">Puppy Name Generator</h5>
+                                <p className="text-muted small mb-3">
+                                  Cute & trendy puppy names for your tiny friend.
+                                </p>
+                              </Card.Body>
+                            </Card>
+                          </Link>
+                        </Col>
+
+                        {/* Cat Name Generator */}
+                        <Col xl={3} lg={4} md={6} sm={6}>
+                          <Link to="/cat-name-generator" className="text-decoration-none">
+                            <Card className="h-100 border-0 shadow-sm tool-card hover-lift transition-all">
+                              <Card.Body className="text-center p-4">
+                                <div className="icon-wrapper bg-secondary bg-opacity-10 rounded-circle mx-auto mb-3">
+                                  <i className="bi bi-emoji-smile text-secondary fs-3"></i>
+                                </div>
+                                <h5 className="fw-semibold text-dark mb-2">Cat Name Generator</h5>
+                                <p className="text-muted small mb-3">
+                                  Fun and stylish names for your little feline.
+                                </p>
+                              </Card.Body>
+                            </Card>
+                          </Link>
+                        </Col>
+
+                        {/* Quote Generator */}
+                        <Col xl={3} lg={4} md={6} sm={6}>
+                          <Link to="/quote-generator" className="text-decoration-none">
+                            <Card className="h-100 border-0 shadow-sm tool-card hover-lift transition-all">
+                              <Card.Body className="text-center p-4">
+                                <div className="icon-wrapper bg-dark bg-opacity-10 rounded-circle mx-auto mb-3">
+                                  <i className="bi bi-chat-square-quote text-dark fs-3"></i>
+                                </div>
+                                <h5 className="fw-semibold text-dark mb-2">Quote Generator</h5>
+                                <p className="text-muted small mb-3">
+                                  Generate inspirational and motivational quotes instantly.
+                                </p>
+                              </Card.Body>
+                            </Card>
+                          </Link>
+                        </Col>
+
+                        {/* Instagram Hashtag Generator */}
+                        <Col xl={3} lg={4} md={6} sm={6}>
+                          <Link to="/instagram-hashtag-generator" className="text-decoration-none">
+                            <Card className="h-100 border-0 shadow-sm tool-card hover-lift transition-all">
+                              <Card.Body className="text-center p-4">
+                                <div className="icon-wrapper bg-pink bg-opacity-10 rounded-circle mx-auto mb-3">
+                                  <i className="bi bi-hash text-danger fs-3"></i>
+                                </div>
+                                <h5 className="fw-semibold text-dark mb-2">Instagram Hashtag Generator</h5>
+                                <p className="text-muted small mb-3">
+                                  Find the best performing hashtags for your posts.
+                                </p>
+                              </Card.Body>
+                            </Card>
+                          </Link>
+                        </Col>
+
+                        {/* Wedding Hashtag Generator */}
+                        <Col xl={3} lg={4} md={6} sm={6}>
+                          <Link to="/wedding-hashtag-generator" className="text-decoration-none">
+                            <Card className="h-100 border-0 shadow-sm tool-card hover-lift transition-all">
+                              <Card.Body className="text-center p-4">
+                                <div className="icon-wrapper bg-purple bg-opacity-10 rounded-circle mx-auto mb-3">
+                                  <i className="bi bi-stars text-purple fs-3"></i>
+                                </div>
+                                <h5 className="fw-semibold text-dark mb-2">Wedding Hashtag Generator</h5>
+                                <p className="text-muted small mb-3">
+                                  Create unique & custom wedding hashtags easily.
+                                </p>
+                              </Card.Body>
+                            </Card>
+                          </Link>
+                        </Col>
+
+                        {/* More Tools Coming */}
                         <Col xl={3} lg={4} md={6} sm={6}>
                           <div className="card h-100 border-2 border-dashed bg-light">
                             <div className="card-body text-center p-4 d-flex flex-column justify-content-center">
@@ -443,15 +563,16 @@ const Index = () => {
                               </div>
                               <h5 className="fw-semibold text-secondary mb-2">More Tools Coming</h5>
                               <p className="text-muted small mb-0">
-                                We're constantly adding new tools to help you work smarter and faster.
+                                We are constantly adding new tools to help you work smarter and faster.
                               </p>
                             </div>
                           </div>
                         </Col>
-                      </Row>
 
+                      </Row>
                     </Container>
                   </section>
+
 
 
                   {/* Use Cases Grid */}

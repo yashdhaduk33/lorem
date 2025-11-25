@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, Form, Button, Alert } from 'react-bootstrap';
+import PageSEO from '../SEO/PageSEO';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -32,6 +33,23 @@ export default function Contact() {
 
   return (
     <Container className="py-5">
+      <PageSEO
+        title="Contact Lorem Text Generator — Support & Feedback"
+        description="Have questions about our Lorem Ipsum tools? Use the contact form to reach the Lorem Text Generator team for product feedback, partnership ideas, or support."
+        keywords="contact lorem ipsum generator, lorem text generator support, placeholder text tool contact"
+        path="/contact"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'ContactPage',
+          'url': 'https://loremtextgenerator.com/contact',
+          'contactPoint': {
+            '@type': 'ContactPoint',
+            'contactType': 'customer support',
+            'email': 'support@loremtextgenerator.com',
+            'availableLanguage': ['English']
+          }
+        }}
+      />
       <Row className="justify-content-center">
         <Col lg={10}>
           {/* Header Section */}
@@ -166,11 +184,11 @@ export default function Contact() {
                         <i className="bi bi-info-circle me-2"></i>
                         About Our Tool
                       </a>
-                      <a href="/teremconcision" className="text-white text-decoration-none opacity-90 hover-opacity-100">
+                      <a href="/termsconditions" className="text-white text-decoration-none opacity-90 hover-opacity-100">
                         <i className="bi bi-file-text me-2"></i>
                         Terms & Conditions
                       </a>
-                      <a href="/Privacypolicy" className="text-white text-decoration-none opacity-90 hover-opacity-100">
+                      <a href="/privacypolicy" className="text-white text-decoration-none opacity-90 hover-opacity-100">
                         <i className="bi bi-shield-check me-2"></i>
                         Privacy Policy
                       </a>

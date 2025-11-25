@@ -3,13 +3,13 @@ const { SitemapStream, streamToPromise } = require('sitemap');
 const { createWriteStream } = require('fs');
 
 async function generateSitemap() {
-  const hostname = 'https://www.loremtextgenerator.com'; // www domain
+  const hostname = 'https://loremtextgenerator.com'; 
   const sitemap = new SitemapStream({ hostname });
   const writeStream = createWriteStream('./public/sitemap.xml');
 
   sitemap.pipe(writeStream);
 
-  const now = new Date().toISOString(); // auto lastmod
+  const now = new Date().toISOString();
 
   const links = [
     // Main pages
@@ -38,9 +38,13 @@ async function generateSitemap() {
     { url: '/quote-generator', changefreq: 'weekly', priority: 0.9 },
     { url: '/instagram-hashtag-generator', changefreq: 'weekly', priority: 0.9 },
     { url: '/wedding-hashtag-generator', changefreq: 'weekly', priority: 0.9 },
+
+    // ➕ NEW TOOLS (added)
+    { url: '/dog-age-calculator', changefreq: 'weekly', priority: 0.9 },
+    { url: '/chronological-age-calculator', changefreq: 'weekly', priority: 0.9 },
   ];
 
-  // ✅ Auto apply lastmod: now to every link
+  // Auto assign lastmod date
   links.forEach(link => {
     sitemap.write({
       ...link,

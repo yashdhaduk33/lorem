@@ -1,9 +1,23 @@
 import React from 'react';
 import { Container, Row, Col, Card, Badge } from 'react-bootstrap';
+import PageSEO from '../SEO/PageSEO';
 
 export default function Termsconditions() {
   return (
     <Container className="py-5">
+      <PageSEO
+        title="Terms & Conditions — Lorem Text Generator"
+        description="Review the terms and acceptable use guidelines for Lorem Text Generator, including allowed usage, warranties, and liability information."
+        keywords="lorem text generator terms, lorem ipsum generator terms of service, placeholder text usage policy"
+        path="/termsconditions"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'TermsOfService',
+          'name': 'Lorem Text Generator Terms & Conditions',
+          'url': 'https://loremtextgenerator.com/termsconditions',
+          'description': 'Terms of service governing the use of the Lorem Text Generator utility.'
+        }}
+      />
       <Row className="justify-content-center">
         <Col lg={10} xl={8}>
           {/* Header Section */}
@@ -132,7 +146,7 @@ export default function Termsconditions() {
                     </div>
                     <div className="col-md-4 text-md-end">
                       <a
-                        href="/Privacypolicy"
+                        href="/privacypolicy"
                         className="btn btn-primary px-4 fw-semibold"
                       >
                         <i className="bi bi-shield-check me-2"></i>
