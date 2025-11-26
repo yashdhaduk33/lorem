@@ -62,6 +62,7 @@ const InstagramHashtagGenerator = () => {
           name="keywords"
           content="instagram hashtag generator, insta hashtags, best instagram hashtags, reel hashtags, viral hashtags, hasthag generator tool"
         />
+        <link rel="canonical" href="https://loremtextgenerator.com/instagram-hashtag-generator" />
       </Helmet>
       <div className="container mt-5">
         <div className="row justify-content-center">

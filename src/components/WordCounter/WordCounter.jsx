@@ -42,7 +42,7 @@ const WordCounter = () => {
           name="keywords"
           content="word counter, character counter, word count, character count, online word counter, free word counter, text analysis, writing tool, word checker, paragraph counter, sentence counter, text counter, writing assistant, word calculator, text statistics"
         />
-        <link rel="canonical" href={SITE_URL} />
+        <link rel="canonical" href="https://loremtextgenerator.com/word-counter" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />

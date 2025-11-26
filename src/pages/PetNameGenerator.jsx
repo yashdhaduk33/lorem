@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './PetNameGenerator.css'; // We'll create this CSS file
 
 // Constants for SEO
-const SITE_URL = "https://loremtextgenerator.com/word-counter";
+const SITE_URL = "https://loremtextgenerator.com/pet-name-generator";
 const OG_IMAGE = "https://loremtextgenerator.com/site-logo.png";
 
 const PetNameGenerator = () => {
@@ -125,7 +125,7 @@ const PetNameGenerator = () => {
             name="keywords"
             content="pet name generator, dog names, cat names, pet names, name generator, pet name ideas, bird names, rabbit names, hamster names, fish names, reptile names, male pet names, female pet names, unisex pet names"
           />
-          <link rel="canonical" href={SITE_URL} />
+          <link rel="canonical" href="https://loremtextgenerator.com/pet-name-generator" />
 
           {/* Open Graph */}
           <meta property="og:title" content="Pet Name Generator — Perfect Names for Dogs, Cats & All Pets" />

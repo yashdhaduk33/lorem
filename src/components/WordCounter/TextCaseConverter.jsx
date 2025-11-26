@@ -73,7 +73,7 @@ const TextCaseConverter = () => {
             content="convert text between different cases instantly with our free online tool. support for uppercase, lowercase, sentence case, and title case."
           />
           <meta property="og:type" content="website" />
-          <link rel="canonical" href="https://yoursite.com/text-case-converter" />
+          <link rel="canonical" href="https://loremtextgenerator.com/text-case-converter" />
         </Helmet>
 
         <div className="row justify-content-center">

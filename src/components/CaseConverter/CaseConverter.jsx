@@ -155,7 +155,7 @@ const CaseConverter = () => {
           name="keywords"
           content="case converter, text case tool, uppercase converter, lowercase converter, title case generator, camelCase converter, snake_case converter, text format tool, online case changer, sentence case converter, convert text online, free text case converter"
         />
-        <link rel="canonical" href={window.location.href} />
+        <link rel="canonical" href="https://loremtextgenerator.com/case-converter" />
 
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Free Online Case Converter Tool - Convert Text Cases Instantly" />

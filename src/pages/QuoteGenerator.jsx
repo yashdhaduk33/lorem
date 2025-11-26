@@ -160,12 +160,12 @@ const QuoteGeneratorTool = () => {
           content="quote maker, free quote maker, quote generator, online quote generator, ai quote generator, incorrect quote generator, inspirational quote generator, motivational quote generator, random quote generator, quote creator, quote editor, quote background maker, quote image generator, custom quote maker"
         />
 
-        <link rel="canonical" href="https://loremtextgenerator.com/quote-maker" />
+        <link rel="canonical" href="https://loremtextgenerator.com/quote-generator" />
 
         {/* Open Graph */}
         <meta property="og:title" content="Free Quote Maker & Quote Generator (AI Supported)" />
         <meta property="og:description" content="Generate quotes online for free. AI quotes, inspirational quotes, posters, backgrounds and more." />
-        <meta property="og:url" content="https://loremtextgenerator.com/quote-maker" />
+        <meta property="og:url" content="https://loremtextgenerator.com/quote-generator" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://loremtextgenerator.com/images/quote-maker-banner.jpg" />
 
@@ -181,8 +181,8 @@ const QuoteGeneratorTool = () => {
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Quote Maker",
-      "url": "https://loremtextgenerator.com/quote-maker",
+      "name": "Quote Generator",
+      "url": "https://loremtextgenerator.com/quote-generator",
       "description": "Free online quote generator with AI, inspirational, motivational, love, life and random quotes. Create quote images, posters and backgrounds.",
       "publisher": {
         "@type": "Organization",

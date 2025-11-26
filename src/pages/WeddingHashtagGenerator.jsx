@@ -84,7 +84,7 @@ const WeddingHashtagGenerator = () => {
           content="Generate unique and creative wedding hashtags for your special day. Free tool for couples planning their wedding."
         />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="/wedding-hashtag-generator" />
+        <link rel="canonical" href="https://loremtextgenerator.com/wedding-hashtag-generator" />
       </Helmet>
 
       <div className="container mt-5">

@@ -22,6 +22,70 @@ html {
   color: #0d6efd !important;
 }
 
+.mega-nav .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.35rem;
+}
+
+.mega-menu {
+  width: min(920px, 90vw);
+  background: #ffffff;
+}
+
+.mega-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.5rem;
+}
+
+.mega-menu-item {
+  border-radius: 12px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.mega-menu-item:hover {
+  background: rgba(13, 110, 253, 0.08);
+  transform: translateX(4px);
+}
+
+.mega-menu-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(13, 110, 253, 0.12);
+  color: #0d6efd;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.mega-menu-footer {
+  background: rgba(248, 249, 250, 0.8);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+}
+
+.modern-navbar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(13, 110, 253, 0.08);
+}
+
+.modern-navbar .brand-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+  font-size: 1.25rem;
+}
+
+.nav-cta {
+  border-radius: 999px;
+  font-weight: 600;
+  padding-inline: 1.5rem;
+  box-shadow: 0 10px 25px rgba(13, 110, 253, 0.25);
+}
+
 /* Ensure content doesn't hide behind fixed navbar */
 main {
   min-height: calc(100vh - 76px - 100px);
@@ -42,6 +106,42 @@ main {
   opacity: 1 !important;
 }
 
+.hero-gradient {
+  background: linear-gradient(135deg, #eef5ff 0%, #ffffff 45%, #f8fbff 100%);
+}
+
+.trust-badge {
+  background: rgba(13, 110, 253, 0.13) !important;
+  color: #0b5ed7 !important;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.stat-chip {
+  background: #ffffff;
+  border: 1px solid rgba(13, 110, 253, 0.12);
+  border-radius: 16px;
+  padding: 0.85rem 1.4rem;
+  min-width: 180px;
+  box-shadow: 0 12px 25px rgba(13, 110, 253, 0.08);
+}
+
+.stat-chip strong {
+  display: block;
+  font-size: 1.25rem;
+  color: #0d6efd;
+}
+
+.stat-chip span {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.hero-card .btn {
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+}
+
 .bg-light {
   background-color: #f8f9fa !important;
 }
@@ -50,5 +150,16 @@ main {
 @media (max-width: 768px) {
   main {
     padding-top: 70px !important;
+  }
+
+  .stat-chip {
+    min-width: unset;
+    width: calc(50% - 0.75rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .stat-chip {
+    width: 100%;
   }
 }

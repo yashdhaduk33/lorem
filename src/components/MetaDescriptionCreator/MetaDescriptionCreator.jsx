@@ -163,6 +163,7 @@ const MetaDescriptionCreator = () => {
             name="keywords"
             content="Meta Description Creator, meta description generator, SEO tool, keyword optimizer, blog SEO, website optimization"
           />
+          <link rel="canonical" href="https://loremtextgenerator.com/metadescriptioncreator" />
         </Helmet>
 
         {/* Navigation Tabs */}

@@ -261,7 +261,7 @@ const EmojiTextGenerator = () => {
           name="description"
           content="Free online emoji text generator with 10+ stylish fonts. Convert normal text to emoji letters, bubble text, fancy symbols, and cool Unicode styles for social media bios, gaming names, and creative projects."
         />
-        <link rel="canonical" href={window.location.href} />
+        <link rel="canonical" href="https://loremtextgenerator.com/emoji-text-generator" />
 
         {/* Advanced SEO Meta Tags */}
         <meta

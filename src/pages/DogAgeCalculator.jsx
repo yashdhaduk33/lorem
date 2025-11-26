@@ -68,6 +68,7 @@ const DogAgeCalculator = () => {
           name="keywords"
           content="dog age calculator, dog years to human years, dog age converter, pet age calculator, calculate dog age, dog human age chart"
         />
+        <link rel="canonical" href="https://loremtextgenerator.com/dog-age-calculator" />
 
         {/* JSON-LD Structured Data */}
         <script type="application/ld+json">

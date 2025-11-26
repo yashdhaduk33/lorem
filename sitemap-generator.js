@@ -25,7 +25,7 @@ async function generateSitemap() {
     { url: '/word-counter', changefreq: 'weekly', priority: 0.9 },
     { url: '/case-converter', changefreq: 'weekly', priority: 0.9 },
     { url: '/emoji-text-generator', changefreq: 'weekly', priority: 0.9 },
-    { url: '/textcaseconverter', changefreq: 'weekly', priority: 0.9 },
+    { url: '/text-case-converter', changefreq: 'weekly', priority: 0.9 },
     { url: '/metadescriptioncreator', changefreq: 'weekly', priority: 0.9 },
 
     // Pet tools

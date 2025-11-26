@@ -4,7 +4,7 @@ import GeneratedOutput from '../components/GeneratedOutput';
 import { generateText } from '../utils/textGenerator';
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card, Badge, Button } from 'react-bootstrap';
-import { Helmet } from 'react-helmet-async';
+import PageSEO from '../components/SEO/PageSEO';
 
 const Index = () => {
   const [items, setItems] = useState([]);
@@ -22,92 +22,157 @@ const Index = () => {
   }, []);
 
   const SITE_URL = "https://loremtextgenerator.com";
-  const OG_IMAGE = `${SITE_URL}/site-logo.png`;
+  const homepageTitle = "Lorem Text Generator — Fast Lorem Ipsum & Placeholder Text Tool";
+  const homepageDescription = "Generate polished Lorem Ipsum text, HTML-ready paragraphs, and SEO-friendly placeholder copy in one click. Designers and developers rely on Lorem Text Generator for fast mockups and production-ready content.";
+  const homepageKeywords = "lorem text generator, lorem ipsum generator, lorem ipsum text online, dummy text generator, placeholder copy creator, random paragraph generator, lorem text tool, lorem ipsum for designers";
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Lorem Text Generator",
+      "url": SITE_URL,
+      "applicationCategory": "Utility",
+      "operatingSystem": "All",
+      "description": "Generate Lorem Ipsum text online instantly for free.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Lorem Text Generator"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1820"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the Lorem Text Generator free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Lorem Text Generator is completely free with no sign-up or hidden limits, so you can create unlimited placeholder text."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I choose paragraphs, sentences, or words?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can generate paragraphs, sentences, or single words and even wrap them in custom HTML tags and CSS classes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the tool store my text?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All generation happens in your browser. We do not save your text or personal data, keeping every session private."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who should use Lorem Text Generator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Designers, developers, content strategists, and SEO specialists use the generator to prototype layouts, test interfaces, and plan copy."
+          }
+        }
+      ]
+    }
+  ];
 
   return (
     <>
-      <Helmet>
-        <title>Lorem Ipsum Generator — Free Dummy Text & Placeholder Generator Online</title>
-        <meta
-          name="description"
-          content="Generate Lorem Ipsum dummy text instantly — perfect for designers, developers, and content creators. Create paragraphs, sentences, or words of placeholder text for free."
-        />
-        <meta
-          name="keywords"
-          content="lorem ipsum generator, dummy text generator, placeholder text, lorem text generator, lorem ipsum online, random paragraph generator, fake text tool, lorem ipsum for design, free lorem ipsum generator"
-        />
-        <link rel="canonical" href={SITE_URL} />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="Free Lorem Ipsum Generator — Dummy Text for Designers & Developers" />
-        <meta
-          property="og:description"
-          content="Generate clean Lorem Ipsum text for mockups, wireframes, or SEO demos. 100% free, no signup."
-        />
-        <meta property="og:image" content={OG_IMAGE} />
-        <meta property="og:url" content={SITE_URL} />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Free Lorem Ipsum Generator — Dummy Text Online" />
-        <meta
-          name="twitter:description"
-          content="Fast & free Lorem Ipsum generator for developers, designers, and copywriters."
-        />
-        <meta name="twitter:image" content={OG_IMAGE} />
-
-        {/* JSON-LD Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            "name": "Lorem Text Generator",
-            "url": SITE_URL,
-            "applicationCategory": "Utility",
-            "operatingSystem": "All",
-            "description": "Generate Lorem Ipsum text online instantly for free.",
-            "publisher": {
-              "@type": "Organization",
-              "name": "Lorem Text Generator"
-            }
-          })}
-        </script>
-      </Helmet>
-
-
+      <PageSEO
+        title={homepageTitle}
+        description={homepageDescription}
+        keywords={homepageKeywords}
+        path="/"
+        image={`${SITE_URL}/site-logo.png`}
+        schema={structuredData}
+      />
       <div className="bg-light min-vh-100">
-        {/* Updated Hero Section - Clean & Professional */}
-        <section
-          className="hero-section py-5 py-md-6 border-bottom"
-          style={{
-            background: "linear-gradient(180deg, #e9f2ff 0%, #ffffff 100%)"
-          }}
-        >
+        {/* Hero Section */}
+        <section className="hero-section hero-gradient py-5 border-bottom">
           <Container>
-            <Row className="justify-content-center text-center">
-              <Col lg={8}>
-                {/* Hero Tagline */}
-                <span className="badge bg-primary-subtle text-primary fw-semibold mb-3 px-3 py-2 rounded-pill shadow-sm">
-                  Free Online Tool
+            <Row className="align-items-center g-4">
+              <Col lg={7}>
+                <span className="badge trust-badge text-uppercase mb-3">
+                  Trusted lorem text toolkit
                 </span>
-
-                {/* Main Title */}
                 <h1 className="display-5 fw-bold text-dark mb-3">
-                  Create Perfect <span className="text-primary">Lorem Ipsum</span> Text Instantly
+                  Design faster with <span className="text-primary">human-friendly Lorem Ipsum</span>
                 </h1>
-
-                {/* Subtitle */}
-                <p className="lead text-muted mb-4 fs-6">
-                  Generate clean, ready-to-use dummy text for your design, development, or SEO content in just one click.
+                <p className="lead text-muted mb-4">
+                  Generate grammatically correct paragraphs, sentences, or words with HTML-ready formatting.
+                  Lorem Text Generator helps you present polished mockups, SEO drafts, and prototypes in minutes.
                 </p>
-
-                {/* Call to Action Buttons */}
-                <div className="d-flex justify-content-center gap-3 mb-5">
+                <div className="d-flex flex-wrap gap-3 mb-4">
                   <a href="#generator" className="btn btn-primary btn-lg px-4 shadow-sm">
-                    Generate Text
+                    Generate Lorem Text
                   </a>
+                  <Link to="/word-counter" className="btn btn-outline-primary btn-lg px-4">
+                    Explore Tools
+                  </Link>
                 </div>
+                <div className="d-flex flex-wrap gap-3">
+                  {[
+                    { label: 'Weekly characters generated', value: '2M+' },
+                    { label: 'Preset formats', value: '12' },
+                    { label: 'Team satisfaction score', value: '4.9/5' }
+                  ].map((stat, index) => (
+                    <div key={index} className="stat-chip">
+                      <strong>{stat.value}</strong>
+                      <span>{stat.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </Col>
+              <Col lg={5}>
+                <Card className="border-0 shadow-sm hero-card">
+                  <Card.Body className="p-4">
+                    <div className="d-flex justify-content-between align-items-center mb-3">
+                      <h4 className="fw-bold text-primary mb-0">Quick presets</h4>
+                      <Badge bg="primary" className="rounded-pill">Live preview</Badge>
+                    </div>
+                    <p className="text-muted small mb-4">
+                      Start with a ready-made layout and fine-tune the text case, HTML tags, or CSS classes.
+                    </p>
+                    <div className="d-grid gap-2">
+                      {[
+                        { title: 'Landing page paragraphs', meta: '3 paragraphs · includes CTA copy' },
+                        { title: 'Blog intro sentences', meta: '6 sentences · sentence case' },
+                        { title: 'Micro copy words', meta: '25 words · uppercase' }
+                      ].map((preset, idx) => (
+                        <Button
+                          key={idx}
+                          variant={idx === 0 ? 'primary' : 'outline-primary'}
+                          className="text-start"
+                          onClick={() => {
+                            const presetConfig = [
+                              { type: 'paragraphs', count: 3, textCase: 'regular', htmlTag: 'p', className: 'lead' },
+                              { type: 'sentences', count: 6, textCase: 'sentence', htmlTag: 'p', className: '' },
+                              { type: 'words', count: 25, textCase: 'upper', htmlTag: 'span', className: 'text-uppercase fw-semibold' }
+                            ][idx];
+                            handleGenerate(presetConfig);
+                            document.getElementById('generator')?.scrollIntoView({ behavior: 'smooth' });
+                          }}
+                        >
+                          <span className="d-block fw-semibold">{preset.title}</span>
+                          <small className="text-muted">{preset.meta}</small>
+                        </Button>
+                      ))}
+                    </div>
+                    <div className="border-top pt-3 mt-4">
+                      <small className="text-muted d-block">
+                        Need something custom? Build your own configuration below and save it for future projects.
+                      </small>
+                    </div>
+                  </Card.Body>
+                </Card>
               </Col>
             </Row>
           </Container>

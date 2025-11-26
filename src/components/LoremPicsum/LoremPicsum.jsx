@@ -108,7 +108,7 @@ const LoremPicsum = () => {
           content="Free random photos and images from Lorem Picsum. Ideal for web design, development, and creative use."
         />
         <meta name="twitter:image" content="https://picsum.photos/1200/630" />
-        <link rel="canonical" href={window.location.href} />
+        <link rel="canonical" href="https://loremtextgenerator.com/lorem-picsum" />
       </Helmet>
 
       <div className="container py-4">

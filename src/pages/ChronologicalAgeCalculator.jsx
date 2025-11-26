@@ -173,6 +173,7 @@ const ChronologicalAgeCalculator = () => {
           name="keywords"
           content="chronological age calculator, exact age calculator, age in years months days, age calculator online, date of birth calculator, school admission age calculator"
         />
+        <link rel="canonical" href="https://loremtextgenerator.com/chronological-age-calculator" />
 
         {/* JSON-LD Structured Data */}
         <script type="application/ld+json">
