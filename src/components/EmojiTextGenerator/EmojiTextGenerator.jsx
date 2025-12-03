@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Card, Form, Button, Alert, Badge, InputGroup } from 'react-bootstrap';
+import { Container, Row, Col, Card, Form, Button, Alert, Badge } from 'react-bootstrap';
 import { Helmet } from 'react-helmet-async';
 
 const EmojiTextGenerator = () => {

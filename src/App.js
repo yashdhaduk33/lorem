@@ -14,8 +14,6 @@ import WordCounter from './components/WordCounter/WordCounter';
 import CaseConverter from './components/CaseConverter/CaseConverter';
 import EmojiTextGenerator from './components/EmojiTextGenerator/EmojiTextGenerator';
 import NameGenerator from './components/Nametool/NameGenerator';
-import BlogLayout from './components/blogpage/BlogLayout';
-import LoremIpsumGenerator from './components/blogpage/BlogLayout';
 import MetaDescriptionCreator from './components/MetaDescriptionCreator/MetaDescriptionCreator';
 import TextCaseConverter from './components/WordCounter/TextCaseConverter';
 import PetNameGenerator from './pages/PetNameGenerator';
@@ -27,10 +25,11 @@ import InstagramHashtagGenerator from './pages/InstagramHashtagGenerator';
 import WeddingHashtagGenerator from './pages/WeddingHashtagGenerator';
 import DogAgeCalculator from './pages/DogAgeCalculator';
 import ChronologicalAgeCalculator from './pages/ChronologicalAgeCalculator';
+import LoremIpsumGenerator from './components/blogpage/BlogLayout';
 
 export default function App() {
   return (
-    <BrowserRouter future={{ v7_startTransition: true }}>
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <div className="App d-flex flex-column min-vh-100">
         <Navbar bg="white" expand="lg" className="shadow-sm modern-navbar" fixed="top">
           <Container>
@@ -40,8 +39,13 @@ export default function App() {
               className="d-flex align-items-center gap-2 text-primary fw-bold fs-4"
             >
               <span className="brand-icon d-inline-flex align-items-center justify-content-center rounded-circle">
-                <i className="bi bi-text-paragraph"></i>
+                <img
+                  src="/site-logo.png"
+                  alt="Site Logo"
+                  style={{ width: '40px', height: '40px', borderRadius: '50%' }}
+                />
               </span>
+
               <div className="text-start lh-1">
                 <span>Lorem Text Generator</span>
                 <small className="d-block text-muted fw-normal">Placeholder text studio</small>
@@ -194,7 +198,7 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/lorem-picsum" element={<LoremPicsum />} />
-            <Route path="/loremipsumgenerator" element={<LoremIpsumGenerator />} />
+            <Route path="/lorem-ipsum-generator" element={<LoremIpsumGenerator />} />
             <Route path="/metadescriptioncreator" element={<MetaDescriptionCreator />} />
             <Route path="/text-case-converter" element={<TextCaseConverter />} />
 

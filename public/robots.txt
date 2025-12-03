@@ -2,5 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://loremtextgenerator.com/sitemap.xml
-Sitemap: https://loremtextgenerator.com/sitemap-tools.xml
-Sitemap: https://loremtextgenerator.com/sitemap-pages.xml

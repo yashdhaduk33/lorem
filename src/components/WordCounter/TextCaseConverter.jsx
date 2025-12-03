@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TextCaseConverter = () => {
@@ -53,7 +53,7 @@ const TextCaseConverter = () => {
   };
 
   return (
-    <HelmetProvider>
+    <>
       <div className="container-fluid bg-light min-vh-100 py-5">
         {/* seo meta tags */}
         <Helmet>
@@ -263,7 +263,7 @@ const TextCaseConverter = () => {
           </div>
         </div>
       </div>
-    </HelmetProvider>
+    </>
   );
 };
 
