@@ -1,9 +1,26 @@
 import React from 'react';
 import { Container, Row, Col, Card, Badge } from 'react-bootstrap';
+import PageSEO from '../SEO/PageSEO';
 
 export default function About() {
   return (
     <Container className="py-5">
+      <PageSEO
+        title="About Lorem Text Generator — Mission, Features & Technology"
+        description="Learn why we built Lorem Text Generator, the problems it solves for designers and developers, and the modern stack that powers our fast placeholder text tools."
+        keywords="about lorem text generator, lorem ipsum tool mission, lorem ipsum generator features, placeholder text tool for designers"
+        path="/about"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'AboutPage',
+          'mainEntity': {
+            '@type': 'Organization',
+            'name': 'Lorem Text Generator',
+            'url': 'https://loremtextgenerator.com'
+          },
+          'description': 'Background information about the Lorem Text Generator utility and its feature set.'
+        }}
+      />
       <Row className="justify-content-center">
         <Col lg={10}>
           {/* Header Section */}

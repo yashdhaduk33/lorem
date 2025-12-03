@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Card, Form, Button, Alert, Badge, InputGroup } from 'react-bootstrap';
+import { Container, Row, Col, Card, Form, Button, Alert, Badge } from 'react-bootstrap';
 import { Helmet } from 'react-helmet-async';
 
 const EmojiTextGenerator = () => {
@@ -261,7 +261,7 @@ const EmojiTextGenerator = () => {
           name="description"
           content="Free online emoji text generator with 10+ stylish fonts. Convert normal text to emoji letters, bubble text, fancy symbols, and cool Unicode styles for social media bios, gaming names, and creative projects."
         />
-        <link rel="canonical" href={window.location.href} />
+        <link rel="canonical" href="https://loremtextgenerator.com/emoji-text-generator" />
 
         {/* Advanced SEO Meta Tags */}
         <meta

@@ -6,47 +6,134 @@
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://loremtextgenerator.com/</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://loremtextgenerator.com/about</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://loremtextgenerator.com/contact</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://loremtextgenerator.com/termsconditions</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://loremtextgenerator.com/lorem-picsum</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://loremtextgenerator.com/loremipsumgenerator</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://loremtextgenerator.com/name-generator</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://loremtextgenerator.com/word-counter</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://loremtextgenerator.com/case-converter</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://loremtextgenerator.com/emoji-text-generator</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://loremtextgenerator.com/text-case-converter</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://loremtextgenerator.com/metadescriptioncreator</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://loremtextgenerator.com/pet-name-generator</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://loremtextgenerator.com/dog-name-generator</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://loremtextgenerator.com/puppy-name-generator</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://loremtextgenerator.com/cat-name-generator</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://loremtextgenerator.com/quote-generator</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://loremtextgenerator.com/instagram-hashtag-generator</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://loremtextgenerator.com/wedding-hashtag-generator</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://loremtextgenerator.com/dog-age-calculator</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://loremtextgenerator.com/chronological-age-calculator</loc>
+    <lastmod>2025-11-25T15:49:25.574Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://loremtextgenerator.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- add other important pages here, e.g. /generate, /about, etc. -->
 </urlset>

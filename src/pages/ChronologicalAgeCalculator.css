@@ -1,0 +1,195 @@
+/* ChronologicalAgeCalculator.css */
+.chronological-age-calculator {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem 0;
+}
+
+.calculator-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.calculator-header {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.result-card {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 15px;
+  padding: 2rem;
+  border: 2px solid #dee2e6;
+  height: 100%;
+}
+
+.main-age-display {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.age-badge-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.age-badge-large .years,
+.age-badge-large .months,
+.age-badge-large .days {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  background: rgba(0, 123, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  min-width: 80px;
+  text-align: center;
+}
+
+.age-badge-large .unit {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.quick-stats .stat-item {
+  padding: 0.5rem;
+}
+
+.quick-stats .stat-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.quick-stats .stat-label {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.placeholder-result {
+  padding: 3rem 2rem;
+  background: #f8f9fa;
+  border-radius: 15px;
+  border: 2px dashed #dee2e6;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.placeholder-icon {
+  opacity: 0.7;
+}
+
+.detailed-results {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+}
+
+.detail-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+}
+
+.milestone-card {
+  background: linear-gradient(135deg, #f8f9ff, #e9ecef);
+  transition: transform 0.2s ease;
+}
+
+.milestone-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+}
+
+.age-group-badge .badge {
+  font-size: 1rem !important;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+/* Form styling */
+.form-control,
+.form-select {
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn {
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .chronological-age-calculator {
+    padding: 1rem 0;
+  }
+
+  .calculator-header h1 {
+    font-size: 2rem;
+  }
+
+  .age-badge-large {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .age-badge-large .years,
+  .age-badge-large .months,
+  .age-badge-large .days {
+    font-size: 1.5rem;
+    min-width: 60px;
+  }
+
+  .quick-stats .stat-number {
+    font-size: 1.25rem;
+  }
+}
+
+/* Animation for results */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-card,
+.detailed-results {
+  animation: fadeIn 0.5s ease-out;
+}

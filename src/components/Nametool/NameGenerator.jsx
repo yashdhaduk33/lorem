@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { Container, Row, Col, Card, Button, Form, Badge, Alert } from 'react-bootstrap';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import './NameGenerator.css';
 
 // Extensive name database
@@ -116,6 +117,20 @@ const NameGenerator = () => {
   };
 
   return (
+    <HelmetProvider>
+      <>
+      <Helmet>
+        <title>Free Name Generator — Create Unique Names for Characters, Brands & Projects</title>
+        <meta
+          name="description"
+          content="Generate unique names for characters, brands, projects, and more. Free name generator with fantasy, sci-fi, modern, mythological, business, and medieval categories."
+        />
+        <meta
+          name="keywords"
+          content="name generator, character name generator, brand name generator, fantasy names, sci-fi names, business name generator, unique names"
+        />
+        <link rel="canonical" href="https://loremtextgenerator.com/name-generator" />
+      </Helmet>
     <Container className="py-4">
       {/* Header */}
       <Row className="mb-5">
@@ -435,6 +450,8 @@ const NameGenerator = () => {
         </Col>
       </Row>
     </Container>
+      </>
+    </HelmetProvider>
   );
 };
 

@@ -65,7 +65,7 @@ const LoremIpsumGenerator = () => {
     title: "Lorem Ipsum Dolor Sit | Free Generator",
     description: "Generate authentic Lorem ipsum dolor sit amet text instantly. Free online Lorem Ipsum generator with customizable paragraphs. Perfect for designers & developers at loremtextgenerator.com.",
     keywords: "lorem ipsum dolor sit, lorem ipsum dolor sit amet, lorem ipsum generator, lorem text generator, loremtextgenerator.com, dummy text, placeholder text, lorem ipsum",
-    canonical: baseUrl,
+    canonical: `${baseUrl}/loremipsumgenerator`,
     ogImage: `https://loremtextgenerator.com/site-logo.png`
   };
 

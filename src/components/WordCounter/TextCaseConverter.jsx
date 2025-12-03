@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TextCaseConverter = () => {
@@ -53,7 +53,7 @@ const TextCaseConverter = () => {
   };
 
   return (
-    <HelmetProvider>
+    <>
       <div className="container-fluid bg-light min-vh-100 py-5">
         {/* seo meta tags */}
         <Helmet>
@@ -73,7 +73,7 @@ const TextCaseConverter = () => {
             content="convert text between different cases instantly with our free online tool. support for uppercase, lowercase, sentence case, and title case."
           />
           <meta property="og:type" content="website" />
-          <link rel="canonical" href="https://yoursite.com/text-case-converter" />
+          <link rel="canonical" href="https://loremtextgenerator.com/text-case-converter" />
         </Helmet>
 
         <div className="row justify-content-center">
@@ -263,7 +263,7 @@ const TextCaseConverter = () => {
           </div>
         </div>
       </div>
-    </HelmetProvider>
+    </>
   );
 };
 

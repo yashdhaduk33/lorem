@@ -1,0 +1,69 @@
+.name-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: 1px solid #e9ecef;
+}
+
+.name-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-item {
+  transition: background-color 0.2s ease-in-out;
+}
+
+.favorite-item:hover {
+  background-color: #fff3cd !important;
+}
+
+.btn {
+  transition: all 0.2s ease-in-out;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+}
+
+.card-header {
+  border-radius: 12px 12px 0 0 !important;
+  font-weight: 600;
+}
+
+.display-4 {
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .name-card .card-body {
+    padding: 1rem;
+  }
+
+  .btn-group-sm {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .btn-group-sm .btn {
+    border-radius: 0.25rem !important;
+  }
+}
+
+/* Animation for copy feedback */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
